@@ -156,7 +156,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['value'])) {
 
         $ten = toTen($_POST['value']);
         $res = toSeventeen($ten);
-        echo '<b>' . 'в семнадцатиричной системе счисления<br>' . $res . '<b>';
+        echo '<b>в семнадцатиричной системе '.'<b>';
+          echo '<b>счисления<br><b>';
+        
+        echo $res;
+        
     }
 }
 ?>
